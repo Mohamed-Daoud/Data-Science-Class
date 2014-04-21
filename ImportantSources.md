@@ -6,7 +6,10 @@ http://cran.r-project.org/bin/windows/Rtools/
 =============================
 GitHub
 https://github.com/
-
+=============================
+Adding, Renaming & Removing a remote
+https://help.github.com/articles/adding-a-remote
+=============================
 ###Important Discussion
 https://class.coursera.org/datascitoolbox-002/forum/thread?thread_id=508
 ###Links
