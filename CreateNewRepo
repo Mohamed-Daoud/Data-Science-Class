@@ -15,12 +15,10 @@ Have Git know that you need to track file changes (BEFOR COMMITTING)
 git add .  -- add all new files
 git add -u -- update tracking files which got renamed or deleted
 git add -A -- do both of the above
-
 git commit -m "message goes here"
 
-
-git push
-git pull
+git push origin master
+git pull origin master
 
 git checkout -b branchName
 git branch  -- which branch I'm in now
