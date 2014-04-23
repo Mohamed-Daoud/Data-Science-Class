@@ -1,0 +1,29 @@
+Create directory locally in Git -- to create your repo in it
+git mkdir ~/dirName
+cd ~/dirName  -- navigate to it to create the repo in the directory
+git init      -- initialize new repo under this directory
+git remote add origin[or any name] [link to repo].git -- create the link between local repo and github repo
+
+git remote -v -- check remote names and links
+
+Fork others repository
+-- Go to repo online and click Fork
+git clone [link to repo].git
+
+
+Have Git know that you need to track file changes (BEFOR COMMITTING)
+git add .  -- add all new files
+git add -u -- update tracking files which got renamed or deleted
+git add -A -- do both of the above
+
+git commit -m "message goes here"
+
+
+git push
+git pull
+
+git checkout -b branchName
+git branch  -- which branch I'm in now
+git checkout master  -- go to master branch
+
+
