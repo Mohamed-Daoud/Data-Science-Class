@@ -1,0 +1,3 @@
+Simulation PDF shows several distribution functions
+binom - binomial
+pois - poisson
