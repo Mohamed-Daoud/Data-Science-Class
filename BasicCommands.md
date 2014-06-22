@@ -10,8 +10,8 @@
 * ls -al List all and show details [-a -l OR -al]
 
 * cd Change Directory
-* mkdir Make Directory
-* touch Create New Empty File
+** mkdir Make Directory
+** touch Create New Empty File
 
 * cp Copy Files
 * cp -r Copy all files from a directory to another
