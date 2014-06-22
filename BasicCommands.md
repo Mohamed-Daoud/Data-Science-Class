@@ -10,13 +10,13 @@
 * ls -al List all and show details [-a -l OR -al]
 
 * cd Change Directory
-1. mkdir Make Directory
-2. touch Create New Empty File
+* mkdir Make Directory
+* touch Create New Empty File
 
 * cp Copy Files
-** cp -r Copy all files from a directory to another
+* cp -r Copy all files from a directory to another
 * rm Remove File
 * 
 
-*- rm -r Remove Entire directory with it's files (including the directory) [-r is a flag]
-- mv Move File + Rename File
+* rm -r Remove Entire directory with it's files (including the directory) [-r is a flag]
+* mv Move File + Rename File
