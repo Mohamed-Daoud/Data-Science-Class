@@ -1,0 +1,1 @@
+https://github.com/hadley/httr/blob/master/demo/oauth2-github.r

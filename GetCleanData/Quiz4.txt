@@ -1,0 +1,14 @@
+Q4.
+length(grep("[Ff]iscal(.*)[Jj]une", gdped$Special.Notes))
+having the word fiscal then some characters then June
+OR
+table(grepl("[Ff]iscal(.*)[Jj]une", gdped$Special.Notes))
+
+Q5.
+install.packages("quantmod")
+library(quantmod)
+amzn <- getSymbols("AMZN", auto.assign=FALSE)
+sampleTime <- index(amzn)
+library(lubridate)
+length(sampleTime[year(sampleTime) == 2012])
+length(sampleTime[year(sampleTime) == 2012 & wday(sampleTime) == 2])

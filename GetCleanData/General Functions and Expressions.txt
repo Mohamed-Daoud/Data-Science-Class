@@ -1,0 +1,21 @@
+build tripple function
+x <- 1:5
+triple <- function(x){x*3}
+sapply(x, triple)
+[1]  3  6  9 12 15
+
+firstElement <- function(x){x[1]}
+firstElement
+function(x){x[1]}
+----------------------------------
+^start of the line (carret)
+end of the line$
+[Uu]pper or [Lo]wer character match
+^[0-9][a-zA-Z] start with zero through 9 and any letter capital or small afterward
+[^?.]$ the end of the line does not have ? or .
+9.11 nine followed by any character then 11 (. replaces any character)
+a|b|c a or b or c
+=====================
+^[Gg]ood|as|[Bb]ad$ good|Good in the beginnig or as anywhere or bad|Bad at the end
+^([Gg]ood|[Bb]ad) good|Good and bad|Bad at the beginning of the line
+(in)? in is optional in the sentence
