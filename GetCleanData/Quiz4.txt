@@ -1,4 +1,35 @@
-Q4.
+Q-1
+setInternet2(TRUE) # to use download.file()
+hUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
+download.file(hUrl, destfile="h.csv")
+data <- read.csv("h.csv")
+splitdata <- strsplit(names(data), "wgtp")
+splitdata[[123]]
+
+Q-2
+gdpUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FGDP.csv"
+download.file(gdpUrl, destfile="gdp.csv")
+gdp <- read.csv("gdp.csv")     # preferable to use skip = 4
+gdp$X.3 <- gsub(",", "", gdp$X.3) # the GDP value column
+gdp$X.3 <- as.numeric(gdp$X.3) # coherce  it to numeric
+gdp <- gdp[!is.na(gdp$X.3), ]  # remove all  NAs
+names(gdp)[2] <- "Rank"        # change the ranking long name to deal with is easily
+gdp$Rank <- as.character(gdp$Rank) # coherse it to character from factor to be able to coherse it later to numeric
+gdp$Rank <- as.numeric(gdp$Rank)
+gdp <- gdp[!is.na(gdp$Rank),]  # remove all NAs (i.e. not ranked country) resulting with only the 190 countries
+mean(gdp$X.3)
+
+Q-3
+length(grep("^United", gdp$X.2))
+grep("^United", gdp$X.2, value=TRUE)
+
+Q-4
+edUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Country.csv"
+download.file(edUrl, destfile="ed.csv")
+ed <- read.csv("ed.csv")
+gdp$X.1 <- NULL remove not-used columns from gdp data frame + X.4 till X.8
+gdped <- merge(gdp, ed, by.x="X", by.y="CountryCode")
+length(grep("[Ff]iscal", gdped$Special.Notes)) # check if word fiscal or Fiscal exists in this column
 length(grep("[Ff]iscal(.*)[Jj]une", gdped$Special.Notes))
 having the word fiscal then some characters then June
 OR
