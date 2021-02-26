@@ -1,6 +1,7 @@
-Create directory locally in Git -- to create your repo in it
+Create directory locally in Git -- to create your repo inside it
 git mkdir ~/dirName
 cd ~/dirName  -- navigate to it to create the repo in the directory
+
 git init      -- initialize new repo under this directory
 git remote add origin[or any name] [link to repo].git -- create the link between local repo and github repo
 
@@ -22,6 +23,4 @@ git pull origin master
 
 git checkout -b branchName
 git branch  -- which branch I'm in now
-git checkout master  -- go to master branch
-
-
+git checkout master  -- go to master brancha
