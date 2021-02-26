@@ -1,4 +1,4 @@
-## CLI - Command Line Interface
+## CLI - Command Line Interface (sample)
 
 * pwd Print Working Directory (my current path)
 * clear Clear Screen
