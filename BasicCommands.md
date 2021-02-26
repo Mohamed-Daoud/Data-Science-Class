@@ -1,6 +1,4 @@
-##CLI - Command Line Interface
-==============================
-###Few Commands
+## CLI - Command Line Interface
 
 * pwd Print Working Directory (my current path)
 * clear Clear Screen
@@ -16,7 +14,6 @@
 * cp Copy Files
 * cp -r Copy all files from a directory to another
 * rm Remove File
-* 
 
 * rm -r Remove Entire directory with it's files (including the directory) [-r is a flag]
 * mv Move File + Rename File
